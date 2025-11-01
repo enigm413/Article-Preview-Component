@@ -98,11 +98,6 @@ body {
   cursor: pointer;
 }
 
-.btn:hover {
-  color: hsl(210, 46%, 95%);
-  background-color: hsl(214, 17%, 51%);
-}
-
 .share-wrapper {
   background-color: hsl(217, 19%, 35%);
   list-style: none;
@@ -136,6 +131,15 @@ body {
 .social-link {
   color: hsl(0, 0%, 100%);
   font-size: 2rem;
+}
+
+.display--none {
+  display: none;
+}
+
+.btn--clicked {
+  color: hsl(210, 46%, 95%);
+  background-color: hsl(214, 17%, 51%);
 }
 
 /*************************/
@@ -215,7 +219,7 @@ body {
   }
 
   .btn {
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding: 0.4rem;
     z-index: 2;
     transform: translateY(30%);
