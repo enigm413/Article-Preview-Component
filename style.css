@@ -24,6 +24,7 @@ body {
   background-color: hsl(0, 0%, 100%);
   border-radius: 1.2rem;
   position: relative;
+  box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.05);
 }
 
 .article-preview-image-wrapper {
@@ -135,4 +136,92 @@ body {
 .social-link {
   color: hsl(0, 0%, 100%);
   font-size: 2rem;
+}
+
+/*************************/
+/****Tablet-Design****/
+/*************************/
+
+@media (max-width: 940px) {
+  .article-preview-component {
+    max-width: 40rem;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+  }
+
+  .article-preview-image-wrapper {
+    border-radius: 0;
+  }
+
+  .article-preview-text-wrapper {
+    padding: 4rem 3.2rem 2rem 2.8rem;
+  }
+
+  .article-preview-title {
+    font-size: 1.8rem;
+  }
+
+  .share-wrapper {
+    width: 100%;
+    gap: 2rem;
+    padding: 2rem 3.2rem;
+    transform: translate(0, 0);
+    right: 0;
+    bottom: 0;
+    border-radius: 0;
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    font-size: 1.8rem;
+    padding: 0.4rem;
+    z-index: 2;
+    transform: translateY(30%);
+  }
+
+  .social-link {
+    font-size: 2.4rem;
+  }
+}
+
+/*************************/
+/****Mobile-Design****/
+/*************************/
+
+@media (max-width: 450px) {
+  .article-preview-component {
+    max-width: 32rem;
+  }
+
+  .article-preview-text-wrapper {
+    padding: 3.6rem 2rem 1.6rem 2rem;
+  }
+
+  .article-preview-title {
+    font-size: 1.6rem;
+    letter-spacing: 0;
+    font-weight: 700;
+  }
+
+  .share-wrapper {
+    width: 100%;
+    gap: 2rem;
+    padding: 2rem 3.2rem;
+    transform: translate(0, 0);
+    right: 0;
+    bottom: 0;
+    border-radius: 0;
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    font-size: 1.8rem;
+    padding: 0.4rem;
+    z-index: 2;
+    transform: translateY(30%);
+  }
+
+  .social-link {
+    font-size: 2.4rem;
+  }
 }
